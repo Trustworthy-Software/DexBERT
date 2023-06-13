@@ -1,0 +1,15 @@
+{
+	"input_len": 128,
+	"embedding_len": 64,
+	"key_instance_num": 1,
+    "Bert_batch_size": 64,
+    "MCD_batch_size": 256,
+    "lr": 5e-3,
+    "warmup": 0.1,
+    "n_epochs": 100,
+    "Adam_Betas": [0.9, 0.999],
+    "Adam_WeightDecay": 10e-5,
+    "save_steps": 1000,
+    "total_steps": 100000
+}
+

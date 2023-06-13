@@ -1,0 +1,17 @@
+android/support/design/R
+android/support/v7/appcompat/R
+android/support/v7/recyclerview/R
+butterknife/internal/Utils
+com/simplemobiletools/musicplayer/AboutActivity
+com/simplemobiletools/musicplayer/ControlActionsListener
+com/simplemobiletools/musicplayer/IncomingCallReceiver
+com/simplemobiletools/musicplayer/MainActivity
+com/simplemobiletools/musicplayer/MusicService
+com/simplemobiletools/musicplayer/MyWidgetConfigure
+com/simplemobiletools/musicplayer/MyWidgetProvider
+com/simplemobiletools/musicplayer/R
+com/simplemobiletools/musicplayer/RemoteControlReceiver
+com/simplemobiletools/musicplayer/Song
+com/simplemobiletools/musicplayer/SongAdapter
+com/simplemobiletools/musicplayer/Utils
+yuku/ambilwarna/R
