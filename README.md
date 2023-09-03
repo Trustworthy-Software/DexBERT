@@ -65,3 +65,17 @@ Effective, Task-Agnostic and Fine-grained Representation Learning of Android Byt
     - To find a reasonable trade-off between model computation cost and performance, we conducted an ablation study exploring the impact of DexBERT embedding size on three downstream tasks. The experiments contain three different sizes for the hidden embedding of the AutoEncoder (AE), specifically 256, 128, and 64. Additionally, we evaluated the performance by directly utilizing the first state vector of the raw DexBERT embedding, which has a size of 768, without applying any dimension reduction from the AutoEncoder. 
     - The experimental results reveal that in the task of Malicious Code Localization, a decrease in vector size does not lead to a significant loss in the performance, until the size is reduced to 128. As for the tasks of Defect Detection and Component Type Classification, the experimental results demonstrate that a larger embedding size resulted in a considerable improvement in performance. However, a size of 128 also offered a solid trade-off for these two tasks, supporting satisfactory performance with a metric score exceeding 0.9.
   - AutoEncoder Module: We considered two potential inputs for the AutoEncoder: the full DexBERT embedding (512x768), and the first state vector of the embedding (size 768). From our observations, these inputs yielded similar performance. However, using the first state vector of the embedding was found to be more efficient, leading to faster convergence during fine-tuning for downstream tasks. Therefore, we use the first state vector as the default input for AutoEncoder.
+
+## Citation
+If you find our work useful, please consider citing it.
+```
+@ARTICLE{10237047,
+  author={Sun, Tiezhu and Allix, Kevin and Kim, Kisub and Zhou, Xin and Kim, Dongsun and Lo, David and Bissyandé, Tegawendé F. and Klein, Jacques},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={DexBERT: Effective, Task-Agnostic and Fine-grained Representation Learning of Android Bytecode}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-16},
+  doi={10.1109/TSE.2023.3310874}}
+```
