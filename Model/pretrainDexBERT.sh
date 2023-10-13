@@ -4,7 +4,7 @@ export SAVE_DIR=../save_dir/DexBERT
 export LOG_DIR=../log_dir/DexBERT
 
 python pretrainDexBERT.py \
-    --train_cfg confi/DexBERT/pretrain.json \
+    --train_cfg config/DexBERT/pretrain.json \
     --model_cfg config/DexBERT/bert_base.json \
     --data_file $DATA_FILE \
     --vocab $VOCAB_FILE \
