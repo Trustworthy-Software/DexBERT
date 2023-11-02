@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--dir", help="The dir should contain several sub_dirs which contain text files belong to different categories", type=str, required=True) 
     parser.add_argument("-f", "--file", help="The file is the final generated feature vocabulary file.", type=str, required=True)
-    parser.add_argument("s", "--size", help="The target vocabulary size.", type=int, default=10000)
+    parser.add_argument("-s", "--size", help="The target vocabulary size.", type=int, default=10000)
     args = parser.parse_args()
 
     gen_vocab(dataset_dir=args.dir, vocab_file=args.file, vocab_size=args.size)
